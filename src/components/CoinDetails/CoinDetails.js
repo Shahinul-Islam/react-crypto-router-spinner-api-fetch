@@ -20,8 +20,8 @@ const CoinDetails = () => {
       {loading == false ? (
         <Spinner></Spinner>
       ) : (
-        <div className="flex justify-between p-10 bg-slate-200">
-          <div className="text-left ml-10">
+        <div className="md:flex md:justify-between lg:justify-around p-10 bg-slate-200">
+          <div className="text-left ml-10 mb-6">
             <h2 className="text-2xl">General Info:</h2>
             <p>Coin Name:{coin.name}</p>
             <p>Market Cap Rank: {coin.market_cap_rank}</p>
@@ -37,7 +37,7 @@ const CoinDetails = () => {
             <p>Liquidity Score: {coin.liquidity_score}</p>
             <p>Public Interest Score: {coin.public_interest_score}</p>
           </div>
-          <div className="mr-10">
+          <div className="mr-10 md:my-auto mx-auto">
             <img src={coin?.image?.large} />
           </div>
         </div>
